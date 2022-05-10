@@ -1,0 +1,12 @@
+FROM tiangolo/tiangolo/uvicorn-gunicorn-fastapi:python-3.9-alpine
+LABEL maintainer="lzm17"
+ENV WORKERS_PER_CORE=4
+ENV MAX_WORKERS=24
+ENV LOG_LEVEL="warning"
+ENV TIMEOUT="200"
+RUN mkdir /yolov5-fastapi
+COPY requirements.txt /yolov5-fastapi
+COPY . /yolov5-fastapi
+WORKDIR /yolov5-fastapi
+EXPOSE 8000
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
