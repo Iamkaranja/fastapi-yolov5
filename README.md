@@ -1,5 +1,5 @@
 # yolov5-fastapi
-A machine learning model API using YOLOv5 and FastAPI
+This machine learning application model will perform object detections by allowing a user to upload images and get back results in JSON or image format.
 
 ## Repo Breakdown
 ```sh
@@ -31,3 +31,23 @@ pip install -r requirements.txt
 ```sh
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
+
+## To build the docker image
+```sh
+docker build -t yolov5-fastapi .
+```
+
+## To run the docker container of the image
+```sh
+docker run -it --rm -p 8000:8000 yolov5-fastapi
+```
+
+The application will be available on http://localhost:8000/
+
+
+Todo:
+* [x] Add dockerfile
+* [] Add authentication to the api
+* [] Add feature: store detected result into a database
+* [] Add more tests
+
