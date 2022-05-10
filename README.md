@@ -42,7 +42,7 @@ docker build -t yolov5-fastapi .
 docker run -it --rm -p 8000:8000 yolov5-fastapi
 ```
 
-The application will be available on http://localhost:8000/
+The application will be available on `http://localhost:8000/`
 
 
 Todo:
