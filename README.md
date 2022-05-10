@@ -47,7 +47,7 @@ The application will be available on http://localhost:8000/
 
 Todo:
 * [x] Add dockerfile
-* [] Add authentication to the api
-* [] Add feature: store detected result into a database
-* [] Add more tests
+* [ ] Add authentication to the api
+* [ ] Add feature: store detected result into a database
+* [ ] Add more tests
 
