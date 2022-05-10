@@ -1,5 +1,5 @@
 # yolov5-fastapi
-This machine learning application model will perform object detections by allowing a user to upload images and get back results in JSON or image format.
+This machine learning model will perform object detections by allowing a user to upload images and get back results in JSON or image format.
 
 ## Repo Breakdown
 ```sh
